@@ -1,0 +1,75 @@
+<head>
+  <title>Gameboy</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Gameboy css only" />
+  <link rel="stylesheet" href="main.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <input class="btn-on" type="button" value="Encender" style=" background: none;
+  border: none;
+  font-family: 'Pixel';
+  font-size: 25px;" /><input
+    class="btn-off btn-hide"
+    type="button"
+    value="Apagar"
+    style="background: none;
+    border: none;
+    font-family: 'Pixel';
+    font-size: 25px;"
+  />
+  <audio src="sound/gameboy-sound.mp3" class="GameSound"></audio>
+  <audio src="sound/happy-14585.mp3" class="happySound"></audio>
+  <audio src="sound/videogame-death-sound-43894.mp3" class="deadSound"></audio>
+  <audio src="sound/8-bit-powerup-6768.mp3" class="powerSound"></audio>
+  
+  <div class="gameboy">
+    <div class="screen-cont">
+      <div class="power"></div>
+      <div class="screen">
+        <div class="header">
+          <p class="textHeader" style="font-family: 'Pixel';">Jaime's project</p>
+        </div>
+        <div class="animated-text">
+          Pokegotchi
+          <div class="copy">®</div>
+        </div>
+        <div class="main">
+          <div class="status-poke" style="display: none;">
+            <p style="text-align: center;" id="energy">Energia: 100</p>
+            <p style="text-align: center;" id="age">Nivel: 1</p>
+          </div>
+          <div class="options">
+            <div class="options-section-1">
+              <div class="selecGotchi" id="Charmander">
+                <img width="50px" height="60px" src="/assets/pokeball.png"/>
+                <p class="elegir">Elegir</p>
+                <button class="selector" onclick="initGame('Charmander')">B</button>
+              </div>
+              <div class="selecGotchi" id="Squirtle">
+                <img width="50px" height="60px" src="/assets/pokeball.png" />
+                <p class="elegir">Elegir</p>
+                <button class="selector" onclick="initGame('Squirtle')">B</button>
+              </div>
+            </div>
+            <div class="options-section-2">
+              <div class="selecGotchi" id="Bulbasaur">
+                <img width="50px" height="60px" src="/assets/pokeball.png" />
+                <p class="elegir">Elegir</p>
+                <button class="selector" onclick="initGame('Bulbasaur')">B</button>
+              </div>
+              <div class="selecGotchi" id="Pichu">
+                <img width="50px" height="60px" src="/assets/pokeball.png" />
+                <p class="elegir">Elegir</p>
+                <button class="selector" onclick="initGame('Pichu')">B</button>
+              </div>
+            </div>
+          </div>
+          <div class="user-messages" style="padding-top: 20px;">
+            <p style="text-align: center;">Elige tu pokemon!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
